@@ -10,10 +10,11 @@ This is a simple Java application to convert values between different currencies
 ## How to Use
 
 1. Run the `main` method of the `Program` class to start the application.
-2. You will be prompted to enter the source currency you want to convert.
-3. Enter the code of the desired target currency.
-4. Enter the amount you want to convert.
-5. The application will display the converted value.
+2. Get currency codes from [ExchangeRate-api](https://www.exchangerate-api.com/docs/supported-currencies) page.
+3. You will be prompted to enter the source currency you want to convert.
+4. Enter the code of the desired target currency.
+5. Enter the amount you want to convert.
+6. The application will display the converted value.
 
 ## Features
 

@@ -17,12 +17,15 @@ public class FileManager {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         Date dateToday = new Date();
         String date = sdf.format(dateToday);
-        String filePath = "src/br/com/alura/files/ExchangeRates_" + date + ".json";
 
-        return filePath;
+        return "src/br/com/alura/files/ExchangeRates_" + date + ".json";
     }
 
     public static void saveFile(Map<String, Double> map, String filePath){
+        File directory = new File(filePath).getParentFile();
+        if (!directory.exists()) {
+            directory.mkdirs();
+        }
 
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(filePath))){
 
@@ -37,7 +40,6 @@ public class FileManager {
         }catch(IOException e){
             System.out.println("Error to save file: " + e.getMessage());
         }
-
     }
 
 
