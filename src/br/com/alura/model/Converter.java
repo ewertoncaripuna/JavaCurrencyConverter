@@ -13,8 +13,8 @@ public class Converter {
             double convertedValue = (amount / originalRate) * targetRate;
             System.out.println("*****************************************");
             System.out.println("Converted value: " + String.format("%.3f",convertedValue) + " " + targetCurrency);
-            System.out.println("Source currency value: " + conversionRates.get(originalCurrency));
-            System.out.println("Target currency value: "+ conversionRates.get(targetCurrency));
+            System.out.println(originalCurrency + ": " + conversionRates.get(originalCurrency));
+            System.out.println(targetCurrency + ": " + conversionRates.get(targetCurrency));
             System.out.println("*****************************************");
         } else {
             System.out.println("Original or target currency not found in exchange rates.");

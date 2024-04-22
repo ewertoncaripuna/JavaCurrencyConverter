@@ -2,7 +2,6 @@ package br.com.alura.service;
 
 import br.com.alura.model.Converter;
 
-import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 
